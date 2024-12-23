@@ -1,0 +1,39 @@
+# VS Code specific
+venv/
+.vscode/
+.vscode/*.code-workspace
+.vscode/*.json
+
+# Dependency directories
+node_modules/
+__pycache__/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled files and executables
+*.class
+*.exe
+*.dll
+*.out
+*.o
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Version control specific
+.idea/
+.vs/
+
+# Project specific files
+*.csv
+.env
