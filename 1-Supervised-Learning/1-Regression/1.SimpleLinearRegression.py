@@ -31,9 +31,6 @@ y_pred = model.predict(x_test)
 
 #Evalute the Model
 metrics = evaluate_regression_metrics(y_test, y_pred, x_test, model)
-for metric, value in metrics.items():
-    print(f"{metric}: {value}")
-
 
 # Plot results
 

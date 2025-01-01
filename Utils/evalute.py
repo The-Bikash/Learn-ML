@@ -49,7 +49,8 @@ def evaluate_regression_metrics(y_true, y_pred, X=None, model=None, cv_folds=5):
         cv_r2 = cross_val_score(model, X, y_true, cv=cv_folds, scoring='r2').mean()
 
     # Return results in a dictionary
-    results = {
+    print(
+        {
         "R-squared": r2,
         "Mean Absolute Error (MAE)": mae,
         "Mean Squared Error (MSE)": mse,
@@ -59,6 +60,5 @@ def evaluate_regression_metrics(y_true, y_pred, X=None, model=None, cv_folds=5):
         "Median Absolute Error": medae,
         "Explained Variance Score": evs,
         "Cross-validation R-squared (CV)": cv_r2,
-    }
-    
-    return results
+        }
+    )
